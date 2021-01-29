@@ -1,0 +1,221 @@
+body * {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+h1, h4, p, li {
+	text-align: center;
+}
+
+.text-color-white {
+	color: white;
+}
+
+.text-color-light-blue {
+	color: #82b1d9;
+}
+
+.text-color-gold {
+	color: gold;
+}
+
+.bg-color-dark-blue {
+	background-color: #245076;
+}
+
+.border-radius-sm {
+	border-radius: 5px;
+}
+
+.border-style-inset {
+	border-style: inset;
+}
+
+.border-style-outset {
+	border-style: outset;
+}
+
+.box-shadow {
+	box-shadow: 3px 3px #222222aa;
+}
+
+div.wrapper {
+	width: 970px;
+	background-color: white;
+}
+
+div.upper {
+	padding: 11px 14px;
+	border-bottom: 3px solid #18375355;
+	border-bottom-style: groove;
+}
+	header {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+		header img {
+			height: 100px;
+			margin: 4px 14px;
+		}
+		header div.text-size-selector {
+			padding: 0 30px 4px;
+			display: flex;
+			justify-content: flex-end;
+		}
+		header div.text-size-selector p {
+			display: inline;
+			font-size: 12px;
+		}
+		header div.text-size-selector a {
+			margin: 0 4px;
+			font-size: 12px;
+		}
+		header div.search {
+			padding: 12px 30px 12px 40px;
+			border-radius: 10px;
+			background-color: #444444;
+		}
+		header div.search input {
+			padding: 6px 8px;
+			border-width: 2px;
+			border-color: #cccccccc;
+			box-shadow: 2px 2px #22222222;
+			font-size: 12px;
+		}
+		header div.search input#search {
+			height: 35px;
+			width: 158px;
+			margin: 1px;
+			border-style: inset;
+		}
+		header div.search input#goSearch {
+			margin: 2px;
+			border-style: outset;
+		}
+
+	nav {
+		margin: 7px 21px 15px 71px;
+		padding: 2px;
+		background-color: #487fad;
+	}
+		nav ul {
+			display: flex;
+			justify-content: space-evenly;
+			padding: 8px;
+			list-style: none;
+		}
+			nav ul li a {
+				font-size: 22px;
+				font-weight: lighter;
+				text-decoration: none;
+			}
+	main {
+		display: block;
+		margin: 15px 15px 7px 60px;
+	}
+		main ul {
+			min-width: 170px;
+			margin: 15px 30px;
+			display: inline-block;
+			vertical-align: top;
+			list-style: none;
+		}
+			main ul li {
+				padding: 5px 15px;
+				text-align: center;
+			}
+			main ul li::before {
+				padding-right: 6px;
+				content: "\0226B";
+				font-size: 6pt;
+				font-weight: bold;
+				color: rgb(255, 225, 0);
+			}
+		main div.info {
+			margin: 5px 10px;
+			display: inline-block;
+			vertical-align: top;
+		}
+			div.info p {
+				max-width: 570px;
+				text-align: center;
+			}
+			div.info p.about {
+				margin-bottom: 7px;
+				font-size: small;
+			}
+			div.info p.mantra {
+				padding: 5px;
+				font-size: 18px;
+				font-style: italic;
+			}
+			div.info p.zen {
+				margin-top: 10px;
+				font-size: medium;
+			}
+
+div.middle {
+	margin: 10px 32px 12px 94px;
+	display: block;
+}
+	div.middle section {
+		width: 269px;
+		margin: 0 10px;
+		padding-left: 20px;
+		padding-right: 110px;
+		border-top: 4px solid #73a7d5;
+		display: inline-block;
+		vertical-align: top;
+	}
+	div.middle section h4 {
+		margin: 5px;
+		padding-left: 20px;
+		font-weight: bold;
+	}
+	div.middle section p {
+		width: 269px;
+		padding: 1px;
+		font-size: small;
+	}
+		div.middle section p span {
+			font-size: x-small;
+		}
+	div.middle section ul {
+		margin-left: 32px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+		list-style-type: square;
+	}
+		div.middle section ul p{
+			width: 220px;
+		}
+
+footer {
+	padding: 51px 0 5px 0px;
+	background: #245177;
+	background: -moz-linear-gradient(top, #245076 0%, #487fad 100%, #487fad 100%);
+	background: -webkit-linear-gradient(top, #245076 0%, #487fad 100%, #487fad 100%);
+	background: linear-gradient(to bottom, #245076 0%, #487fad 100%, #487fad 100%);
+}
+	footer ul {
+		/* margin-top: 30px; */
+		margin-left: 40px;
+		display: flex;
+		justify-content: center;
+		list-style: none;
+	}
+		footer ul li {
+			margin: 0 25px;
+		}
+			footer ul li a {
+				text-decoration: none;
+			}
+	footer p {
+		margin-top: 14px;
+		font-size: x-small;
+	}
